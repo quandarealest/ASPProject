@@ -1,0 +1,52 @@
+﻿body {
+    margin-left: 0;
+}
+
+li {
+    margin-right: 2em;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+    li a {
+        color: white;
+    }
+
+#navbarStyle {
+    background-color: forestgreen;
+    text-align: center;
+    align-items: center;
+}
+
+#brandDeco {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: white;
+    font-weight: bolder;
+}
+
+#commonContent {
+    background-color: forestgreen;
+}
+
+#footerDeco {
+    background-color: forestgreen;
+}
+
+
+#containerDeco {
+    height: 30em;
+}
+
+#footerPara {
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    align-items: center;
+}
+
+#navDeco {
+    align-items: center;
+}
