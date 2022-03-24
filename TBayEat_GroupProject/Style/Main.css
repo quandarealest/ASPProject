@@ -8,12 +8,16 @@ li {
     margin-top: 1em;
 }
 
-    li a {
-        color: white;
-    }
+li a {
+    color: white;
+}
+
+#form1{
+    //height: 100vh;
+}
 
 #navbarStyle {
-    background-color: forestgreen;
+    background-color: #1AC073;
     text-align: center;
     align-items: center;
 }
@@ -25,17 +29,8 @@ li {
     font-weight: bolder;
 }
 
-#commonContent {
-    background-color: forestgreen;
-}
-
 #footerDeco {
-    background-color: forestgreen;
-}
-
-
-#containerDeco {
-    height: 30em;
+    background-color: #1AC073;
 }
 
 #footerPara {

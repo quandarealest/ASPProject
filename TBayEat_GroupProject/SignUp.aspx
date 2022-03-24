@@ -3,7 +3,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet"/>
     <link href="../Style/Main.css" rel="stylesheet" type="text/css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
         <WizardSteps>
             <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
