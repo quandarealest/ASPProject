@@ -2,5 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs
 /.vs/ASPProject/v16/.suo
- .vs/TBayEat_GroupProject/v16/.suos
+/.vs/TBayEat_GroupProject/v16/.suos
+/.vs/TBayEat_GroupProject/v16/
+/TBayEat_GroupProject/obj/Debug
