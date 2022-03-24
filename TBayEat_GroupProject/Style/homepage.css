@@ -1,0 +1,123 @@
+﻿.bannerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #1AC073;
+}
+
+.contactWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.contactWrapper > div:nth-child(1) {
+    margin-left: 100px;
+}
+
+.contactWrapper > div:nth-child(2) {
+    margin-right: 100px;
+}
+
+.bannerWrapper > div:nth-child(1) {
+    margin-left: 100px;
+}
+
+.bannerWrapper > div:nth-child(2) {
+    margin-right: 100px;
+}
+
+.title {
+    font-style: italic;
+    font-size: 70px;
+    color: #fff;
+}
+
+.subtitle {
+    color: #fff;
+}
+
+.searchWrapper {
+    display: flex;
+}
+
+.searchBox {
+    width: 300px;
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+    border: 1px solid #F3BA00;
+}
+
+.searchBtn {
+    border-bottom-left-radius: unset;
+    border-top-left-radius: unset;
+    background-color: #F3BA00;
+    color: #fff;
+}
+
+.contactTitle {
+    font-style: italic;
+}
+
+.contactTextArea {
+    width: 100% !important;
+}
+
+.contactRow {
+    margin: 20px 0;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin: 100px 100px;
+}
+
+.contentWrapper > div {
+    margin: 10px 0;
+}
+
+.contentWrapper > p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.foodContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foodComponentWrapper {
+    width: fit-content;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.component > div {
+    display: flex;
+    margin: 10px 10px;
+}
+
+.price, .add {
+    margin-left: auto;
+}
+
+.add > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.name, .price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rating, .timing {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
