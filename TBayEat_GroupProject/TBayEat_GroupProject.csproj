@@ -163,6 +163,7 @@
     <Content Include="SignUp.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Style\homepage.css" />
+    <Content Include="Style\login.css" />
     <Content Include="Style\Main.css" />
     <Content Include="Style\reset.css" />
     <Content Include="ViewSwitcher.ascx" />
