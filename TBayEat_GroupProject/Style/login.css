@@ -1,0 +1,32 @@
+﻿.loginPageWrapper {
+    height: calc(100vh - 50px - 111px);
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+    color: #1AC073;
+}
+
+.subTitle {
+    color: #1AC073;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.forgetPassword {
+    color: #1AC073;
+    font-style: italic;
+}
+
+.checkbox > input {
+    margin-left: unset !important;
+}
+
+.submitBtn {
+    width: 100%;
+    background-color: #1AC073;
+    border: unset;
+}

@@ -146,3 +146,11 @@ C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\obj\Debug\TBayEat_Gr
 C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\obj\Debug\TBayEat_GroupProject.csproj.CopyComplete
 C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\obj\Debug\TBayEat_GroupProject.dll
 C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\obj\Debug\TBayEat_GroupProject.pdb
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\EntityFramework.dll
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\EntityFramework.SqlServer.dll
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\EntityFramework.xml
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\EntityFramework.SqlServer.xml
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Users\buikh\Source\Repos\ASPProject\TBayEat_GroupProject\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml

@@ -16,6 +16,10 @@ li a {
     //height: 100vh;
 }
 
+#containerDeco {
+    height: fit-content;
+}
+
 #navbarStyle {
     background-color: #1AC073;
     text-align: center;
