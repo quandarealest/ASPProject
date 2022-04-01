@@ -65,8 +65,6 @@ where i.ItemId = pi.itemID and pi.packageID = p.PackageId"></asp:SqlDataSource>
                     </asp:Chart>
                 </div>
                 <div class="col-md-5">
-                    <asp:SqlDataSource ID="SqlDataSourceCustomer" runat="server" ConnectionString="<%$ ConnectionStrings:TBayEatConnection %>" SelectCommand="SELECT UserName, Email, PhoneNumber, DOB FROM NewMemberShip WHERE (Role LIKE 'Customer')"></asp:SqlDataSource>
-                    <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" DataSourceID="SqlDataSourceCustomer"></asp:GridView>
                 </div>
             </div>
             <div class="row">
