@@ -53,8 +53,8 @@
             </div>
             <div class="row">
                 <div class="col-md-7" style="margin-top: 1.5em; margin-left: 3em;">
-                    <asp:SqlDataSource ID="SqlDataSourcePackagedetails" runat="server" ConnectionString="<%$ ConnectionStrings:TBayEatConnection %>" SelectCommand="select p.Description,(i.Price*pi.Quantity) as Total_Price from Items i, Package_Items pi, Packages p
-where i.ItemId = pi.itemID and pi.packageID = p.PackageId"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSourcePackagedetails" runat="server" ConnectionString="<%$ ConnectionStrings:TBayEatConnection %>" SelectCommand="select p.Description,(i.Price*pi.Quantity) as Total_Price from Items i, Package_Item pi, Packages p
+where i.ItemId = pi.ItemId and pi.PackageItemId = p.PackageId"></asp:SqlDataSource>
                     <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSourcePackagedetails" Palette="SeaGreen" Width="472px">
                         <Series>
                             <asp:Series Name="Series1" YValuesPerPoint="2" XValueMember="Description" YValueMembers="Total_Price"></asp:Series>
