@@ -10,7 +10,7 @@
     </asp:ContentPlaceHolder>
     <link href="Content/bootstrap.css" rel="stylesheet"/>
     <link href="../Style/Main.css" rel="stylesheet" type="text/css" />
-    <link href="../Style/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../Style/reset.css" rel="stylesheet" type="text/css" />    
 </head> 
 <body>
     <nav class="reset-this navbar fixed-top navbar-light bg-success" >
