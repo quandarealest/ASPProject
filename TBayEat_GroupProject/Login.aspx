@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <div class="col-md-12 loginPageWrapper">
-        <asp:Login ID="loginForm" runat="server" CssClass="loginForm">
+        <asp:Login ID="loginForm" runat="server" CssClass="loginForm" OnAuthenticate="LoginAuthentication" OnLoggedIn="loginForm_LoggedIn">
             <LayoutTemplate>
                 <table cellpadding="1" cellspacing="0" style="border-collapse:collapse;">
                     <tr>
