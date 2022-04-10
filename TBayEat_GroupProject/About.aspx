@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Master/FrontEnd.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="TBayEat_GroupProject.About" %>
 
-<asp:Content ID="about" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="about1" ContentPlaceHolderID="head" runat="server">
     <link href="Content/bootstrap.css" rel="stylesheet"/>
     <link href="./Style/Main.css" rel="stylesheet" type="text/css" />
     <link href="./Style/homepage.css" rel="stylesheet" type="text/css" />
@@ -18,7 +18,7 @@
             }
             </style>
 </asp:Content>
-<asp:Content ID="mainpage" ContentPlaceHolderID="body" runat="server">
+<asp:Content ID="about2" ContentPlaceHolderID="body" runat="server">
          <div class="bannerWrapper">
             <div>
                 <div>

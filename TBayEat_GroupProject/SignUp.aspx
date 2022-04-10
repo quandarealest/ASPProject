@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <div class="col-md-12 loginPageWrapper">
-    <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" CreateUserButtonStyle-CssClass="btn btn-primary submitBtn">
+    <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" CreateUserButtonStyle-CssClass="btn btn-primary submitBtn" OnCreatedUser="CreateUserWizard1_CreatedUser" OnContinueButtonClick="CreateUserWizard1_ContinueButtonClick">
         <WizardSteps>
             <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
                 <ContentTemplate>
@@ -67,7 +67,7 @@
                     </table>
                 </ContentTemplate>
             </asp:CreateUserWizardStep>
-            <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+            <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server" >
             </asp:CompleteWizardStep>
         </WizardSteps>
     </asp:CreateUserWizard>

@@ -21,19 +21,19 @@
                     <a class="nav-link" href="HomePage.aspx">Home</a>
                 </li>
                 <li class="nav-item active my-2">
-                    <a class="nav-link" href="AboutUs.aspx">About Us</a>
+                    <a class="nav-link" href="About.aspx">About Us</a>
                 </li>
                 <li class="nav-item active my-2">
-                    <a class="nav-link" href="AboutUs.aspx">Menu</a>
+                    <a class="nav-link" href="About.aspx">Menu</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="ContactUs.aspx">Contact Us</a>
+                    <a class="nav-link" href="Contact.aspx">Contact Us</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="Login.aspx">Login</a>
+                    <a id="loginLink" runat="server" class="nav-link" href="~/Login.aspx">Login</a>
                 </li>
                     <li class="nav-item active">
-                    <a class="nav-link" href="SignUp.aspx">Sign Up</a>
+                    <a id="signUpLink" runat="server" class="nav-link" href="~/SignUp.aspx">Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -53,19 +53,19 @@
                         <a class="nav-link" href="HomePage.aspx">Home</a>
                     </li>
                     <li class="nav-item active my-2">
-                        <a class="nav-link" href="AboutUs.aspx">About Us</a>
+                        <a class="nav-link" href="About.aspx">About Us</a>
                     </li>
                     <li class="nav-item active my-2">
-                        <a class="nav-link" href="AboutUs.aspx">Menu</a>
+                        <a class="nav-link" href="About.aspx">Menu</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="AboutUs.aspx">Contact Us</a>
+                        <a class="nav-link" href="About.aspx">Contact Us</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Login.aspx">Login</a>
+                        <a class="nav-link" runat="server" href="Login.aspx">Login</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="SignUp.aspx">Sign Up</a>
+                        <a class="nav-link" runat="server" href="SignUp.aspx">Sign Up</a>
                     </li>
                 </ul>
             </div>
