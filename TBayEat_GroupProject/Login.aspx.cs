@@ -24,8 +24,12 @@ namespace TBayEat_GroupProject
             if (ValidationFunction(loginForm.UserName, loginForm.Password))
             {
                 e.Authenticated = true;
+
                 
-            } else
+            } 
+            else
+
+
             {
                 e.Authenticated = false;
             }
