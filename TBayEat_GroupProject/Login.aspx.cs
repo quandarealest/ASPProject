@@ -24,14 +24,12 @@ namespace TBayEat_GroupProject
             if (ValidationFunction(loginForm.UserName, loginForm.Password))
             {
                 e.Authenticated = true;
-<<<<<<< Updated upstream
-                
-            } else
-=======
 
-            }
+                
+            } 
             else
->>>>>>> Stashed changes
+
+
             {
                 e.Authenticated = false;
             }
