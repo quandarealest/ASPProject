@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/FrontEnd.Master" AutoEventWireup="true" CodeBehind="CatererProfile.aspx.cs" Inherits="TBayEat_GroupProject.CatererProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <a href="caterermenumanagement.aspx">caterermenumanagement.aspx</a>nat="server">
     <link href="Content/bootstrap.css" rel="stylesheet"/>
      <link href="../Style/Main.css" rel="stylesheet" type="text/css" />
     <link href="../Style/homepage.css" rel="stylesheet" type="text/css" />
