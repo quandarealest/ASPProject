@@ -4,7 +4,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet"/>
      <link href="../Style/Main.css" rel="stylesheet" type="text/css" />
     <link href="../Style/homepage.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../Style/stylesheet2.css" />
+    <link rel="stylesheet" type="text/css" href="../Style/caterermanagementpage.css" />
     
  </asp:Content>
 <asp:Content  ID="Content2" ContentPlaceHolderID="body" runat="server">
