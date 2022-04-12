@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/FrontEnd.Master" AutoEventWireup="true" CodeBehind="CatererProfile.aspx.cs" Inherits="TBayEat_GroupProject.CatererProfile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/FrontEnd.Master" AutoEventWireup="true" CodeBehind="CatererMenuManagement.aspx.cs" Inherits="TBayEat_GroupProject.CatererMenuManagement" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <a href="caterermenumanagement.aspx">caterermenumanagement.aspx</a>nat="server">
+    <a href="CatererMenuManagement.aspx" runat="server" />
     <link href="Content/bootstrap.css" rel="stylesheet"/>
      <link href="../Style/Main.css" rel="stylesheet" type="text/css" />
     <link href="../Style/homepage.css" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
 
 <h2 style="color:#00cc70"  align="center" >Single item</h2>
   <table id="tables" style="width: 50%; margin-left: 20px; margin-right:auto; border: 1px solid #ddd; left: 20px;">
-                <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand" >
+                <asp:Repeater ID="rpt" runat="server">
                 <ItemTemplate>
                 
                 <table style="width: 100%; padding: 2px;margin-left:40px">
@@ -34,7 +34,7 @@
                     <table >
                         <tr>
                             <td  style="background-color: #F0FAF7; padding:10px">
-                                <asp:Image ID="Image1" height="140px" width="140px" runat="server" ImageUrl='<%# Eval("image") %>' />
+                                <asp:Image ID="Image1" height="140px" width="140px" runat="server" ImageUrl='<%# Eval("Image") %>' />
                             </td>
                             <td  style="background-color: #F0FAF7; padding:10px;width:305.6px">
                                 <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
@@ -51,6 +51,7 @@
                 </td>
                 </tr>
                 </table>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TBayEatConnection %>" SelectCommand="SELECT [Name], [Description], [Image], [Price] FROM [Items]"></asp:SqlDataSource>
 
                 </ItemTemplate>
                 </asp:Repeater>
@@ -58,6 +59,7 @@
                     <td align="center" style="padding:10px;">
                         <asp:Button ID="Button5" runat="server" Text="Item" BackColor="#FFCC00" Style="border: solid 1px #ddd;margin-left:40px;margin-top:10px"
                                     Height="30px" Width="466.6px" /><br />
+                     
                      
                         <asp:Button ID="Button6" runat="server" Text="Save" 
                             BackColor="#00CC79" Style="border: solid 1px #ddd;margin-left:40px;margin-top:10px;margin-bottom:10px"
@@ -67,7 +69,6 @@
                 </tr>
         
    </table>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TBayEatConnection %>" SelectCommand="SELECT * FROM [Items]"></asp:SqlDataSource>
        
     </div>
         <div align="right">
@@ -76,7 +77,7 @@
 
 
 <table id="tables2" style="width: 50%; margin-left: 20px; margin-right:auto; border: 1px solid #ddd; left: 20px;">
-                <asp:Repeater ID="Repeater2" runat="server" DataSourceID="SqlDataSource2" OnItemCommand="Repeater1_ItemCommand" >
+                <asp:Repeater ID="rpt1" runat="server"  >
                 <ItemTemplate>
                 
                 <table style="width: 100%; padding: 2px;margin-left:40px">
@@ -120,7 +121,6 @@
 
                     </td>
                 </tr>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TBayEatConnection %>" SelectCommand="SELECT * FROM [Packages]"></asp:SqlDataSource>
       </table>
   
 

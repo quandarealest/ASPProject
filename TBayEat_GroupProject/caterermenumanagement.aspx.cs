@@ -1,81 +1,56 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace TBayEat_GroupProject
 {
-    public partial class caterermenumanagement : System.Web.UI.Page
+    public partial class CatererMenuManagement : System.Web.UI.Page
     {
-        string CS = ConfigurationManager.ConnectionStrings["TBayEatConnection"].ConnectionString;
-        int id;
        
-
+        string strcon = ConfigurationManager.ConnectionStrings["TBayEatConnection"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.QueryString["ItemId"] == null)
+            if (Session["userid"].ToString() == "" || Session["userid"] == null)
             {
-                Response.Redirect("caterermenumanagement.aspx");
-            }
+                Response.Write("<script>alert('Session Expired Login Again');</script>");
 
-            
-
-        }
-
-        protected void btnBuy_Click(object sender, EventArgs e)
-        {
-            if (Session["UserId"] == null)
-            {
-                Response.Redirect("UserLogin.aspx");
-            }
-
-            else
-            {
-                string cookies = "";
-
-                id = Convert.ToInt32(Request.QueryString["ItemId"].ToString());
-                DataTable dt = getData("select * from Items where ItemId = " + id);
-
-                foreach (DataRow dr in dt.Rows)
-                {
-                    cookies = dr["Name"].ToString() + "-" +
-                              dr["Description"].ToString() + "-" +
-                              dr["Price"].ToString() + "-" +
-                              dr["image"].ToString();
-
-                }
-
-                
-            }
-        }
-
-        private DataTable getData(String query)
-        {
-            SqlConnection con = new SqlConnection(CS);
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            return dt;
-        }
-
-        protected void btnViewMyOrder_Click(object sender, EventArgs e)
-        {
-            if (Session["UserId"] == null)
-            {
-                Response.Redirect("UserLogin.aspx");
+                Response.Redirect("Login.aspx");
             }
             else
             {
-                Response.Redirect("ViewOrder.aspx");
+
+
+                SqlConnection con = new SqlConnection(strcon);
+
+
+                SqlDataAdapter da = new SqlDataAdapter("Select * from Items where ItemId in ( Select ItemId from Package_Item where PackageItemId in(Select PackageId from Caterer_Package where UserId='" + Session["userId"].ToString().Trim() + "'))", con);
+
+
+                DataSet ds = new DataSet();
+
+                da.Fill(ds);
+                rpt.DataSource = ds;
+                rpt.DataBind();
+
+                SqlDataAdapter da1= new SqlDataAdapter("Select * from Packages where PackageId in ( Select PackageId from Caterer_Package where UserId='" + Session["userId"].ToString().Trim() + "')", con);
+
+
+                DataSet ds1 = new DataSet();
+
+                da1.Fill(ds1);
+                rpt1.DataSource = ds1;
+                rpt1.DataBind();
             }
+
         }
 
+
+    
     }
 }
