@@ -23,10 +23,20 @@ namespace TBayEat_GroupProject.Master
                 SqlDataReader dr= command.ExecuteReader();
                 while(dr.Read())
                 {
-                    loginLink.InnerText = dr["UserName"].ToString();
-                    loginLink.HRef = "~/Profile.aspx";
-                    signUpLink.InnerText = "Log Out";
-                    signUpLink.HRef = "~/Login.aspx";
+                    if (dr["Approval"].ToString() == "1") {
+                        loginLink.InnerText = dr["UserName"].ToString();
+                        loginLink.HRef = "~/CatererProfile.aspx";
+                        signUpLink.InnerText = "Log Out";
+                        signUpLink.HRef = "~/Login.aspx";
+                    }
+                    else
+                    {
+                        loginLink.InnerText = dr["UserName"].ToString();
+                        loginLink.HRef = "~/CustomerProfile.aspx";
+                        signUpLink.InnerText = "Log Out";
+                        signUpLink.HRef = "~/Login.aspx";
+
+                    }
                 }
 
                 
