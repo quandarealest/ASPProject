@@ -152,6 +152,7 @@
     <Content Include="Style\catererprofile.css" />
     <Content Include="Reports.aspx" />
     <Content Include="Requests.aspx" />
+    <Content Include="ProductDetails.aspx" />
     <Content Include="Style\dashboard.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -289,6 +290,12 @@
     </Compile>
     <Compile Include="Master\FrontEnd.Master.designer.cs">
       <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports.aspx.cs">
