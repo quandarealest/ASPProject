@@ -11,52 +11,43 @@ namespace TBayEat_GroupProject
 {
 
 
-    public partial class Dashboard
+    public partial class Reports
     {
 
         /// <summary>
-        /// lblNumOrders control.
+        /// OrderDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNumOrders;
+        protected global::System.Web.UI.WebControls.SqlDataSource OrderDetails;
 
         /// <summary>
-        /// lblCompletedOrders control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCompletedOrders;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// lblInprogressOrders control.
+        /// RestaurantDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInprogressOrders;
+        protected global::System.Web.UI.WebControls.SqlDataSource RestaurantDetails;
 
         /// <summary>
-        /// UserDetails control.
+        /// GridView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource UserDetails;
-
-        /// <summary>
-        /// Chart1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
     }
 }

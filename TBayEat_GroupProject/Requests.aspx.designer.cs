@@ -11,52 +11,43 @@ namespace TBayEat_GroupProject
 {
 
 
-    public partial class Dashboard
+    public partial class Requests
     {
 
         /// <summary>
-        /// lblNumOrders control.
+        /// CatererDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNumOrders;
+        protected global::System.Web.UI.WebControls.SqlDataSource CatererDetails;
 
         /// <summary>
-        /// lblCompletedOrders control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCompletedOrders;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// lblInprogressOrders control.
+        /// btnApprove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInprogressOrders;
+        protected global::System.Web.UI.WebControls.Button btnApprove;
 
         /// <summary>
-        /// UserDetails control.
+        /// btnReject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource UserDetails;
-
-        /// <summary>
-        /// Chart1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
+        protected global::System.Web.UI.WebControls.Button btnReject;
     }
 }
