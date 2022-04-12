@@ -204,6 +204,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SignUp.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Style\detail.css" />
     <Content Include="Style\homepage.css" />
     <Content Include="Style\login.css" />
     <Content Include="Style\Main.css" />
