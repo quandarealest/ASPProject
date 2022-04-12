@@ -44,223 +44,36 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </div>
-        <div class="foodContent">
-            <div class="foodComponentWrapper">
-                 <img src="./images/im.jpg"  height="200px" width="200px" />
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Salad
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
+        <asp:Label runat="server" ID="testing">Hello</asp:Label>
+        <div class="foodContent">         
+            <asp:Repeater ID="DataLoadRepeater" runat="server">
+                <ItemTemplate>
+                    <div id="<%#DataBinder.Eval(Container, "DataItem.ItemId") %>"" class="foodComponentWrapper">
+                        <a href="ProductDetails.aspx?productID=<%#DataBinder.Eval(Container, "DataItem.ItemId") %>">
+                         <img src="./images/sample3.png" />
+                        <div class="component">
+                            <div>
+                                <span class="name">
+                                    <%#DataBinder.Eval(Container, "DataItem.Name") %>
+                                </span>
+                                <span class="price">
+                                    $<%#DataBinder.Eval(Container, "DataItem.Price") %></span></div>
+                            <div>
+                                <div class="rating">
+                                    <span class="glyphicon glyphicon-star"></span>4.7
+                                </div>
+                                <div class="timing">
+                                    50-79 mins
+                                </div>
+                                <div class="add">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
                     </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="foodComponentWrapper">
-                 <img src="./images/img1.jpg"  height="200px" width="200px" />
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Butter Naan and Chicken Pakora
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>             
-            <div class="foodComponentWrapper">
-                 <img src="./images/img1.jpg"  height="200px" width="200px" />
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Butter Naan
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodComponentWrapper">
-                 <img src="./images/img8.jpg" />
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Chicken Biriyani
-                        </span>
-                        <span class="price">
-                            $20
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodComponentWrapper">
-                 <img src="./images/img5.jpg" height="200px" width="200px"/>
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Chicken Pakora
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodComponentWrapper">
-                 <img src="./images/img9.png" height="200px" width="200px" />
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Chicken Soup
-                        </span>
-                        <span class="price">
-                            $12
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodComponentWrapper">
-                 <img src="./images/img4.jpg" height="200px" width="200px"/>
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Chicken Tikka
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodComponentWrapper">
-                 <img src="./images/img10.jpg" height="200px" width="200px"/>
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Salad
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodComponentWrapper">
-                 <img src="./images/img3.jpg" height="200px" width="200px"
-                <div class="component">
-                    <div>
-                        <span class="name">
-                            Combos
-                        </span>
-                        <span class="price">
-                            $19
-                        </span>
-                    </div>
-                    <div>
-                        <div class="rating">
-                            <span class="glyphicon glyphicon-star"></span>4.7
-                        </div>
-                        <div class="timing">
-                            50-79 mins
-                        </div>
-                        <div class="add">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </ItemTemplate>
+            </asp:Repeater>
         </div>
     </div>
     <div class="contactWrapper">

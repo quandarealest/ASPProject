@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Data.SqlClient;
 
@@ -29,7 +28,13 @@ namespace TBayEat_GroupProject.Master
                         signUpLink.InnerText = "Log Out";
                         signUpLink.HRef = "~/Login.aspx";
                     }
-                    else
+                    else if (dr["Role"].ToString() == "Admin")
+                    {
+                        loginLink.InnerText = dr["UserName"].ToString();
+                        loginLink.HRef = "~/Dashboard.aspx";
+                        signUpLink.InnerText = "Log Out";
+                        signUpLink.HRef = "~/Login.aspx";
+                    } else
                     {
                         loginLink.InnerText = dr["UserName"].ToString();
                         loginLink.HRef = "~/CustomerProfile.aspx";
@@ -38,15 +43,6 @@ namespace TBayEat_GroupProject.Master
 
                     }
                 }
-
-                
-                    if (dr["Role"].ToString() == "Admin")
-                    {
-                        loginLink.InnerText = dr["UserName"].ToString();
-                        loginLink.HRef = "~/CatererProfile.aspx";
-                        signUpLink.InnerText = "Log Out";
-                        signUpLink.HRef = "~/Login.aspx";
-                    }
                     sqlConnection.Close();
             }
         }
