@@ -47,7 +47,7 @@ namespace TBayEat_GroupProject
             dr = command.ExecuteReader();
             while (dr.Read())
             {
-                if ((UserName == dr["UserName"].ToString()) & (Password == dr["Password"].ToString()))
+                if ((UserName == dr["UserName"].ToString().Replace("\r\n", string.Empty)) & (Password == dr["Password"].ToString().Replace("\r\n", string.Empty)))
                 {
                     LoginFlag = true;
                     UserId = dr["UserId"].ToString();

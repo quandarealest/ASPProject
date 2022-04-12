@@ -5,3 +5,20 @@
 #sideBarDeco {
     background-color:gainsboro;
 }
+
+.OrderDetails {
+    background-color:white;
+}
+
+.btnDeco {
+    background-color: #1AC073;
+    border: unset;
+}
+.buttonArea {
+    margin-top: 2em;
+    width: 6em;
+   
+}
+
+
+
